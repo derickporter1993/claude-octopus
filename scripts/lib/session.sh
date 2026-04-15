@@ -292,7 +292,7 @@ display_rich_progress() {
 
 # v7.19.0 P2.3: Result caching for probe workflows
 # Cache directory
-CACHE_DIR="${WORKSPACE_DIR}/.cache/probe-results"
+CACHE_DIR="${WORKSPACE_DIR:-${HOME}/.claude-octopus}/.cache/probe-results"
 CACHE_TTL=3600  # 1 hour in seconds
 
 # v7.19.0 P2.4: Progressive synthesis flag
